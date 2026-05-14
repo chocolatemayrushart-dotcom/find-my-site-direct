@@ -200,7 +200,7 @@
         <p class="sub">UNLOCK</p>
         <h2>10% OFF</h2>
         <p class="sub2">YOUR ORDER</p>
-        <input type="tel" placeholder="What is your phone number?" style="display:none" />
+        
         <div class="pv-phone">
           <div class="pv-cc"><span class="pv-flag"></span><span>+1</span><span style="font-size:9px">▼</span></div>
           <input type="tel" placeholder="What is your phone number?" />
