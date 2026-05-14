@@ -200,8 +200,12 @@
         <p class="sub">UNLOCK</p>
         <h2>10% OFF</h2>
         <p class="sub2">YOUR ORDER</p>
-        <input type="tel" placeholder="What is your phone number?" />
-        <p class="pv-disc">*By providing your number and clicking the button, you agree to receive recurring marketing messages. Consent is not required to purchase. Msg & data rates may apply. Reply STOP to opt-out.</p>
+        <input type="tel" placeholder="What is your phone number?" style="display:none" />
+        <div class="pv-phone">
+          <div class="pv-cc"><span class="pv-flag"></span><span>+1</span><span style="font-size:9px">▼</span></div>
+          <input type="tel" placeholder="What is your phone number?" />
+        </div>
+        <p class="pv-disc">*By providing your number and clicking the button, you agree to receive recurring auto-dialed marketing SMS (including cart reminders; AI content; artificial or prerecorded voices) and our <a href="#">TERMS OF SERVICE</a> (including arbitration). Consent is not required to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help; STOP to opt-out. View <a href="#">PRIVACY POLICY</a>.</p>
         <button class="pv-btn">Sign up now<small>to subscribe to texts</small></button>
         <button class="pv-no">No Thanks</button>
         <p class="pv-success" style="display:none">Thanks! Use code <b>WELCOME10</b> at checkout.</p>
