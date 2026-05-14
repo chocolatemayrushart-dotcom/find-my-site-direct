@@ -5,23 +5,23 @@
   const css = `
   .pv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99998;display:none;align-items:center;justify-content:center;font-family:'Metropolis Regular',Arial,sans-serif}
   .pv-overlay.open{display:flex}
-  .pv-modal{background:#fff;max-width:420px;width:92%;padding:36px 28px;border-radius:6px;position:relative;text-align:center}
-  .pv-close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:22px;cursor:pointer;color:#000}
-  .pv-modal h2{font-size:34px;margin:14px 0 6px;font-weight:800;letter-spacing:.5px;color:#000}
-  .pv-modal p.sub{font-size:13px;letter-spacing:2px;color:#000;margin:0 0 4px}
-  .pv-modal p.sub2{font-size:13px;letter-spacing:2px;color:#000;margin:0 0 18px}
-  .pv-modal input{width:100%;padding:14px 16px;border:1px solid #000;border-radius:30px;font-size:14px;margin-bottom:12px;outline:none;color:#000;background:#fff}
-  .pv-modal .pv-disc{font-size:11px;color:#333;line-height:1.5;margin:0 0 16px}
+  .pv-modal{background:#fff;max-width:340px;width:90%;padding:24px 22px;border-radius:6px;position:relative;text-align:center;box-sizing:border-box}
+  .pv-close{position:absolute;top:6px;right:10px;background:none;border:0;font-size:20px;cursor:pointer;color:#000;line-height:1}
+  .pv-modal h2{font-size:26px;margin:8px 0 4px;font-weight:800;letter-spacing:.5px;color:#000}
+  .pv-modal p.sub{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 2px}
+  .pv-modal p.sub2{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 14px}
+  .pv-modal input{width:100%;padding:11px 14px;border:1px solid #000;border-radius:30px;font-size:13px;margin-bottom:10px;outline:none;color:#000;background:#fff;box-sizing:border-box}
+  .pv-modal .pv-disc{font-size:9.5px;color:#333;line-height:1.45;margin:0 0 12px}
   .pv-modal .pv-disc a{color:#000;text-decoration:underline;font-weight:600}
-  .pv-btn{background:#000;color:#fff;border:0;border-radius:30px;padding:14px 28px;font-size:15px;cursor:pointer;width:100%;font-weight:600}
-  .pv-btn small{display:block;font-size:11px;font-weight:400;opacity:.85;margin-top:2px}
-  .pv-no{background:none;border:0;margin-top:12px;cursor:pointer;color:#000;font-size:14px}
-  .pv-logo{font-family:'Pinyon Script',cursive;font-size:48px;color:#000;line-height:1}
-  .pv-success{color:#0a7d2c;font-size:13px;margin-top:8px}
-  .pv-teaser{position:fixed;left:24px;bottom:28px;z-index:99995;display:flex;align-items:center;gap:10px;font-family:'Metropolis Regular',Arial,sans-serif}
-  .pv-teaser-x{width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #e3e3e3;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:0}
-  .pv-teaser-pill{background:#000;color:#fff;border:0;border-radius:40px;padding:18px 34px;font-size:22px;font-weight:800;letter-spacing:.5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
-  @media (max-width:600px){.pv-teaser-pill{font-size:17px;padding:14px 22px}}
+  .pv-btn{background:#000;color:#fff;border:0;border-radius:30px;padding:11px 22px;font-size:13px;cursor:pointer;width:100%;font-weight:600}
+  .pv-btn small{display:block;font-size:10px;font-weight:400;opacity:.85;margin-top:2px}
+  .pv-no{background:none;border:0;margin-top:10px;cursor:pointer;color:#000;font-size:12px}
+  .pv-logo{font-family:'Pinyon Script',cursive;font-size:38px;color:#000;line-height:1}
+  .pv-success{color:#0a7d2c;font-size:12px;margin-top:8px}
+  .pv-teaser{position:fixed;left:16px;bottom:16px;z-index:99995;display:flex;align-items:center;gap:8px;font-family:'Metropolis Regular',Arial,sans-serif;max-width:calc(100% - 32px)}
+  .pv-teaser-x{width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid #e3e3e3;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:0;flex-shrink:0}
+  .pv-teaser-pill{background:#000;color:#fff;border:0;border-radius:40px;padding:11px 20px;font-size:13px;font-weight:700;letter-spacing:.5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:nowrap}
+  @media (max-width:600px){.pv-teaser{left:12px;bottom:12px}.pv-teaser-pill{font-size:12px;padding:10px 16px}.pv-teaser-x{width:24px;height:24px;font-size:13px}}
 
   .pv-cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99996;display:none}
   .pv-cart-overlay.open{display:block}
