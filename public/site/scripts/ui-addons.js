@@ -167,9 +167,24 @@
   updateCartCount();
 
   // ---------- 10% off popup ----------
-  if (!localStorage.getItem(POPUP_KEY)) {
-    setTimeout(showPopup, 1500);
+  const seen = localStorage.getItem(POPUP_KEY);
+  if (seen !== "dismissed") {
+    if (seen === "teaser") setTimeout(showTeaser, 600);
+    else setTimeout(showPopup, 1500);
   }
+
+  function showTeaser() {
+    if (document.querySelector(".pv-teaser")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "pv-teaser";
+    wrap.innerHTML = `
+      <button class="pv-teaser-x" aria-label="Close">&times;</button>
+      <button class="pv-teaser-pill">GET 10% OFF</button>`;
+    document.body.appendChild(wrap);
+    wrap.querySelector(".pv-teaser-x").onclick = () => { wrap.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); };
+    wrap.querySelector(".pv-teaser-pill").onclick = () => { wrap.remove(); showPopup(); };
+  }
+
   function showPopup() {
     const overlay = document.createElement("div");
     overlay.className = "pv-overlay open";
@@ -187,15 +202,16 @@
         <p class="pv-success" style="display:none">Thanks! Use code <b>WELCOME10</b> at checkout.</p>
       </div>`;
     document.body.appendChild(overlay);
-    function close() { overlay.remove(); localStorage.setItem(POPUP_KEY, "1"); }
-    overlay.querySelector(".pv-close").onclick = close;
-    overlay.querySelector(".pv-no").onclick = close;
-    overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "teaser"); showTeaser(); }
+    function done() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
+    overlay.querySelector(".pv-close").onclick = dismiss;
+    overlay.querySelector(".pv-no").onclick = dismiss;
+    overlay.addEventListener("click", e => { if (e.target === overlay) dismiss(); });
     overlay.querySelector(".pv-btn").onclick = function () {
       const v = overlay.querySelector("input").value.trim();
       if (v.length < 6) { overlay.querySelector("input").focus(); return; }
       overlay.querySelector(".pv-success").style.display = "block";
-      setTimeout(close, 2200);
+      setTimeout(done, 2200);
     };
   }
 })();
