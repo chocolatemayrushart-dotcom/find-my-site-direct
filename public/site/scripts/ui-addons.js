@@ -10,8 +10,13 @@
   .pv-modal h2{font-size:26px;margin:8px 0 4px;font-weight:800;letter-spacing:.5px;color:#000}
   .pv-modal p.sub{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 2px}
   .pv-modal p.sub2{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 14px}
-  .pv-modal input{width:100%;padding:11px 14px;border:1px solid #000;border-radius:30px;font-size:13px;margin-bottom:10px;outline:none;color:#000;background:#fff;box-sizing:border-box}
-  .pv-modal .pv-disc{font-size:9.5px;color:#333;line-height:1.45;margin:0 0 12px}
+  .pv-phone{display:flex;align-items:center;width:100%;border:1px solid #000;border-radius:30px;padding:6px 14px;margin-bottom:10px;box-sizing:border-box;gap:8px}
+  .pv-phone .pv-cc{display:flex;align-items:center;gap:4px;font-size:13px;color:#000;border-right:1px solid #ddd;padding-right:8px;flex-shrink:0}
+  .pv-phone .pv-cc .pv-flag{width:20px;height:14px;background:linear-gradient(to bottom,#b22234 0 20%,#fff 20% 40%,#b22234 40% 60%,#fff 60% 80%,#b22234 80%);position:relative;border-radius:2px;overflow:hidden}
+  .pv-phone .pv-cc .pv-flag::before{content:"";position:absolute;top:0;left:0;width:9px;height:8px;background:#3c3b6e}
+  .pv-phone input{flex:1;border:0;padding:8px 4px;font-size:13px;outline:none;color:#000;background:transparent;min-width:0}
+  .pv-phone input::placeholder{color:#666}
+  .pv-modal .pv-disc{font-size:9.5px;color:#333;line-height:1.45;margin:0 0 12px;text-align:center}
   .pv-modal .pv-disc a{color:#000;text-decoration:underline;font-weight:600}
   .pv-btn{background:#000;color:#fff;border:0;border-radius:30px;padding:11px 22px;font-size:13px;cursor:pointer;width:100%;font-weight:600}
   .pv-btn small{display:block;font-size:10px;font-weight:400;opacity:.85;margin-top:2px}
