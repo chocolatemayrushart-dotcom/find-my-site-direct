@@ -18,6 +18,10 @@
   .pv-no{background:none;border:0;margin-top:12px;cursor:pointer;color:#000;font-size:14px}
   .pv-logo{font-family:'Pinyon Script',cursive;font-size:48px;color:#000;line-height:1}
   .pv-success{color:#0a7d2c;font-size:13px;margin-top:8px}
+  .pv-teaser{position:fixed;left:24px;bottom:28px;z-index:99995;display:flex;align-items:center;gap:10px;font-family:'Metropolis Regular',Arial,sans-serif}
+  .pv-teaser-x{width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #e3e3e3;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:0}
+  .pv-teaser-pill{background:#000;color:#fff;border:0;border-radius:40px;padding:18px 34px;font-size:22px;font-weight:800;letter-spacing:.5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  @media (max-width:600px){.pv-teaser-pill{font-size:17px;padding:14px 22px}}
 
   .pv-cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99996;display:none}
   .pv-cart-overlay.open{display:block}
