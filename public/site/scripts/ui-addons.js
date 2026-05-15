@@ -168,22 +168,8 @@
   updateCartCount();
 
   // ---------- 10% off popup ----------
-  const seen = localStorage.getItem(POPUP_KEY);
-  if (seen !== "dismissed") {
-    if (seen === "teaser") setTimeout(showTeaser, 600);
-    else setTimeout(showPopup, 1500);
-  }
-
-  function showTeaser() {
-    if (document.querySelector(".pv-teaser")) return;
-    const wrap = document.createElement("div");
-    wrap.className = "pv-teaser";
-    wrap.innerHTML = `
-      <button class="pv-teaser-x" aria-label="Close">&times;</button>
-      <button class="pv-teaser-pill">GET 10% OFF</button>`;
-    document.body.appendChild(wrap);
-    wrap.querySelector(".pv-teaser-x").onclick = () => { wrap.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); };
-    wrap.querySelector(".pv-teaser-pill").onclick = () => { wrap.remove(); showPopup(); };
+  if (localStorage.getItem(POPUP_KEY) !== "dismissed") {
+    setTimeout(showPopup, 1200);
   }
 
   function showPopup() {
