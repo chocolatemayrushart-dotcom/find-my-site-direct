@@ -193,7 +193,7 @@
         <p class="pv-success" style="display:none">Thanks! Use code <b>WELCOME10</b> at checkout.</p>
       </div>`;
     document.body.appendChild(overlay);
-    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "teaser"); showTeaser(); }
+    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
     function done() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
     overlay.querySelector(".pv-close").onclick = dismiss;
     overlay.querySelector(".pv-no").onclick = dismiss;
