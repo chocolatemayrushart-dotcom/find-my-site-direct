@@ -3,30 +3,26 @@
   const POPUP_KEY = "perceptve_popup_seen_v1";
 
   const css = `
-  .pv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99998;display:none;align-items:center;justify-content:center;font-family:'Metropolis Regular',Arial,sans-serif}
+  .pv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99998;display:none;align-items:center;justify-content:center;font-family:'Metropolis Regular',Arial,sans-serif;padding:12px;box-sizing:border-box}
   .pv-overlay.open{display:flex}
-  .pv-modal{background:#fff;max-width:340px;width:90%;padding:24px 22px;border-radius:6px;position:relative;text-align:center;box-sizing:border-box}
-  .pv-close{position:absolute;top:6px;right:10px;background:none;border:0;font-size:20px;cursor:pointer;color:#000;line-height:1}
-  .pv-modal h2{font-size:26px;margin:8px 0 4px;font-weight:800;letter-spacing:.5px;color:#000}
-  .pv-modal p.sub{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 2px}
-  .pv-modal p.sub2{font-size:11px;letter-spacing:2px;color:#000;margin:0 0 14px}
-  .pv-phone{display:flex;align-items:center;width:100%;border:1px solid #000;border-radius:30px;padding:6px 14px;margin-bottom:10px;box-sizing:border-box;gap:8px}
-  .pv-phone .pv-cc{display:flex;align-items:center;gap:4px;font-size:13px;color:#000;border-right:1px solid #ddd;padding-right:8px;flex-shrink:0}
-  .pv-phone .pv-cc .pv-flag{width:20px;height:14px;background:linear-gradient(to bottom,#b22234 0 20%,#fff 20% 40%,#b22234 40% 60%,#fff 60% 80%,#b22234 80%);position:relative;border-radius:2px;overflow:hidden}
-  .pv-phone .pv-cc .pv-flag::before{content:"";position:absolute;top:0;left:0;width:9px;height:8px;background:#3c3b6e}
-  .pv-phone input{flex:1;border:0;padding:8px 4px;font-size:13px;outline:none;color:#000;background:transparent;min-width:0}
+  .pv-modal{background:#fff;max-width:300px;width:100%;max-height:calc(100vh - 24px);overflow:auto;padding:18px 18px 14px;border-radius:4px;position:relative;text-align:center;box-sizing:border-box}
+  .pv-close{position:absolute;top:6px;right:8px;background:none;border:0;font-size:18px;cursor:pointer;color:#000;line-height:1;padding:4px}
+  .pv-modal h2{font-size:22px;margin:4px 0 2px;font-weight:800;letter-spacing:.5px;color:#000}
+  .pv-modal p.sub{font-size:10px;letter-spacing:2px;color:#000;margin:0}
+  .pv-modal p.sub2{font-size:10px;letter-spacing:2px;color:#000;margin:0 0 10px}
+  .pv-phone{display:flex;align-items:center;width:100%;border:1px solid #000;border-radius:30px;padding:4px 12px;margin-bottom:8px;box-sizing:border-box;gap:6px}
+  .pv-phone .pv-cc{display:flex;align-items:center;gap:4px;font-size:12px;color:#000;border-right:1px solid #ddd;padding-right:6px;flex-shrink:0}
+  .pv-phone .pv-cc .pv-flag{width:18px;height:12px;background:linear-gradient(to bottom,#b22234 0 20%,#fff 20% 40%,#b22234 40% 60%,#fff 60% 80%,#b22234 80%);position:relative;border-radius:2px;overflow:hidden}
+  .pv-phone .pv-cc .pv-flag::before{content:"";position:absolute;top:0;left:0;width:8px;height:7px;background:#3c3b6e}
+  .pv-phone input{flex:1;border:0;padding:6px 2px;font-size:12px;outline:none;color:#000;background:transparent;min-width:0}
   .pv-phone input::placeholder{color:#666}
-  .pv-modal .pv-disc{font-size:9.5px;color:#333;line-height:1.45;margin:0 0 12px;text-align:center}
+  .pv-modal .pv-disc{font-size:8px;color:#333;line-height:1.4;margin:0 0 8px;text-align:center}
   .pv-modal .pv-disc a{color:#000;text-decoration:underline;font-weight:600}
-  .pv-btn{background:#000;color:#fff;border:0;border-radius:30px;padding:11px 22px;font-size:13px;cursor:pointer;width:100%;font-weight:600}
-  .pv-btn small{display:block;font-size:10px;font-weight:400;opacity:.85;margin-top:2px}
-  .pv-no{background:none;border:0;margin-top:10px;cursor:pointer;color:#000;font-size:12px}
-  .pv-logo{font-family:'Pinyon Script',cursive;font-size:38px;color:#000;line-height:1}
+  .pv-btn{background:#000;color:#fff;border:0;border-radius:30px;padding:9px 18px;font-size:12px;cursor:pointer;width:100%;font-weight:600}
+  .pv-btn small{display:block;font-size:9px;font-weight:400;opacity:.85;margin-top:1px}
+  .pv-no{background:none;border:0;margin-top:6px;cursor:pointer;color:#000;font-size:11px;text-decoration:underline}
+  .pv-logo{font-family:'Pinyon Script',cursive;font-size:32px;color:#000;line-height:1}
   .pv-success{color:#0a7d2c;font-size:12px;margin-top:8px}
-  .pv-teaser{position:fixed;left:16px;bottom:16px;z-index:99995;display:flex;align-items:center;gap:8px;font-family:'Metropolis Regular',Arial,sans-serif;max-width:calc(100% - 32px)}
-  .pv-teaser-x{width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid #e3e3e3;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:0;flex-shrink:0}
-  .pv-teaser-pill{background:#000;color:#fff;border:0;border-radius:40px;padding:11px 20px;font-size:13px;font-weight:700;letter-spacing:.5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:nowrap}
-  @media (max-width:600px){.pv-teaser{left:12px;bottom:12px}.pv-teaser-pill{font-size:12px;padding:10px 16px}.pv-teaser-x{width:24px;height:24px;font-size:13px}}
 
   .pv-cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99996;display:none}
   .pv-cart-overlay.open{display:block}
@@ -172,22 +168,8 @@
   updateCartCount();
 
   // ---------- 10% off popup ----------
-  const seen = localStorage.getItem(POPUP_KEY);
-  if (seen !== "dismissed") {
-    if (seen === "teaser") setTimeout(showTeaser, 600);
-    else setTimeout(showPopup, 1500);
-  }
-
-  function showTeaser() {
-    if (document.querySelector(".pv-teaser")) return;
-    const wrap = document.createElement("div");
-    wrap.className = "pv-teaser";
-    wrap.innerHTML = `
-      <button class="pv-teaser-x" aria-label="Close">&times;</button>
-      <button class="pv-teaser-pill">GET 10% OFF</button>`;
-    document.body.appendChild(wrap);
-    wrap.querySelector(".pv-teaser-x").onclick = () => { wrap.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); };
-    wrap.querySelector(".pv-teaser-pill").onclick = () => { wrap.remove(); showPopup(); };
+  if (localStorage.getItem(POPUP_KEY) !== "dismissed") {
+    setTimeout(showPopup, 1200);
   }
 
   function showPopup() {
@@ -211,7 +193,7 @@
         <p class="pv-success" style="display:none">Thanks! Use code <b>WELCOME10</b> at checkout.</p>
       </div>`;
     document.body.appendChild(overlay);
-    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "teaser"); showTeaser(); }
+    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
     function done() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
     overlay.querySelector(".pv-close").onclick = dismiss;
     overlay.querySelector(".pv-no").onclick = dismiss;
