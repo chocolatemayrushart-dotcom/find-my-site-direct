@@ -13,7 +13,9 @@ function Index() {
   const [unlocked, setUnlocked] = useState(false);
   const [pwd, setPwd] = useState("");
   const [error, setError] = useState(false);
+  const [showPwd, setShowPwd] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+  const [showPill, setShowPill] = useState(true);
   const [phone, setPhone] = useState("");
   const [signedUp, setSignedUp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -23,6 +25,10 @@ function Index() {
       setUnlocked(true);
     }
   }, []);
+
+  useEffect(() => {
+    if (showPwd) inputRef.current?.focus();
+  }, [showPwd]);
 
   function tryUnlock(e: React.FormEvent) {
     e.preventDefault();
@@ -60,94 +66,160 @@ function Index() {
         boxSizing: "border-box",
       }}
     >
-      <div style={{ textAlign: "center", maxWidth: 420, width: "100%" }}>
-        <img
-          src={LOGO_URL}
-          alt="Perceptve"
-          style={{ width: 80, height: "auto", margin: "0 auto 28px", display: "block" }}
-        />
-        <h1
+      <div style={{ textAlign: "center", maxWidth: 480, width: "100%" }}>
+        {!showPwd ? (
+          <>
+            <img
+              src={LOGO_URL}
+              alt="Perceptve"
+              style={{ width: 70, height: "auto", margin: "0 auto 28px", display: "block" }}
+            />
+            <h1
+              style={{
+                fontSize: 14,
+                fontWeight: 700,
+                letterSpacing: "1.5px",
+                margin: "0 0 14px",
+              }}
+            >
+              5 MONTH ANNIVERSARY 22/5 5PM EST
+            </h1>
+            <button
+              onClick={() => setShowPwd(true)}
+              style={{
+                background: "none",
+                border: 0,
+                padding: 0,
+                fontSize: 11,
+                letterSpacing: "2px",
+                fontWeight: 700,
+                cursor: "pointer",
+                color: "#000",
+              }}
+            >
+              ENTER USING PASSWORD
+            </button>
+          </>
+        ) : (
+          <div style={{ position: "relative", display: "inline-block" }}>
+            <button
+              onClick={() => {
+                setShowPwd(false);
+                setPwd("");
+                setError(false);
+              }}
+              aria-label="Close"
+              style={{
+                position: "absolute",
+                top: -44,
+                right: 0,
+                background: "#fff",
+                border: "1px solid #000",
+                borderRadius: "50%",
+                width: 28,
+                height: 28,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 14,
+                lineHeight: 1,
+                color: "#000",
+              }}
+            >
+              ×
+            </button>
+            <form onSubmit={tryUnlock} style={{ display: "flex", alignItems: "stretch" }}>
+              <input
+                ref={inputRef}
+                type="password"
+                value={pwd}
+                onChange={(e) => setPwd(e.target.value)}
+                placeholder="Password"
+                style={{
+                  border: `1px solid ${error ? "#c00" : "#000"}`,
+                  borderRight: 0,
+                  padding: "12px 16px",
+                  fontSize: 14,
+                  outline: "none",
+                  width: 240,
+                  background: "#fff",
+                  color: "#000",
+                  borderRadius: 0,
+                }}
+              />
+              <button
+                type="submit"
+                style={{
+                  background: "#000",
+                  color: "#fff",
+                  border: "1px solid #000",
+                  padding: "12px 22px",
+                  fontSize: 13,
+                  fontWeight: 700,
+                  letterSpacing: "2px",
+                  cursor: "pointer",
+                  borderRadius: 0,
+                }}
+              >
+                ENTER
+              </button>
+            </form>
+            {error && (
+              <p style={{ color: "#c00", fontSize: 11, marginTop: 8, textAlign: "left" }}>
+                Incorrect password
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Bottom-left UNLOCK ACCESS pill with × */}
+      {showPill && !showSignup && (
+        <div
           style={{
-            fontSize: 16,
-            fontWeight: 700,
-            letterSpacing: "1.5px",
-            margin: "0 0 14px",
+            position: "fixed",
+            bottom: 24,
+            left: 24,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: 4,
           }}
         >
-          5 MONTH ANNIVERSARY 22/5 5PM EST
-        </h1>
-        <p
-          style={{
-            fontSize: 11,
-            letterSpacing: "2px",
-            margin: "0 0 18px",
-            fontWeight: 600,
-          }}
-        >
-          ENTER USING PASSWORD
-        </p>
-        <form onSubmit={tryUnlock} style={{ display: "flex", justifyContent: "center", gap: 8 }}>
-          <input
-            ref={inputRef}
-            type="password"
-            value={pwd}
-            onChange={(e) => setPwd(e.target.value)}
-            placeholder="Password"
-            style={{
-              border: `1px solid ${error ? "#c00" : "#000"}`,
-              padding: "10px 14px",
-              fontSize: 13,
-              borderRadius: 30,
-              outline: "none",
-              width: 200,
-              background: "#fff",
-              color: "#000",
-            }}
-          />
           <button
-            type="submit"
+            onClick={() => setShowPill(false)}
+            aria-label="Dismiss"
+            style={{
+              background: "none",
+              border: 0,
+              fontSize: 14,
+              cursor: "pointer",
+              color: "#000",
+              padding: "0 4px",
+              lineHeight: 1,
+            }}
+          >
+            ×
+          </button>
+          <button
+            onClick={() => setShowSignup(true)}
             style={{
               background: "#000",
               color: "#fff",
               border: 0,
               borderRadius: 30,
-              padding: "10px 22px",
+              padding: "12px 22px",
               fontSize: 12,
               fontWeight: 700,
-              letterSpacing: "1px",
+              letterSpacing: "1.5px",
               cursor: "pointer",
+              boxShadow: "0 4px 14px rgba(0,0,0,.25)",
             }}
           >
-            ENTER
+            UNLOCK ACCESS
           </button>
-        </form>
-        {error && (
-          <p style={{ color: "#c00", fontSize: 11, marginTop: 10 }}>Incorrect password</p>
-        )}
-      </div>
-
-      {/* Bottom-left UNLOCK ACCESS pill */}
-      {!showSignup && (
-        <button
-          onClick={() => setShowSignup(true)}
-          style={{
-            position: "fixed",
-            bottom: 24,
-            left: 24,
-            background: "#000",
-            color: "#fff",
-            border: 0,
-            borderRadius: 30,
-            padding: "12px 22px",
-            fontSize: 12,
-            fontWeight: 700,
-            letterSpacing: "1.5px",
-            cursor: "pointer",
-            boxShadow: "0 4px 14px rgba(0,0,0,.25)",
-          }}
-        >
-          UNLOCK ACCESS
-        </button>
+        </div>
       )}
 
       {/* Signup modal */}
@@ -170,10 +242,10 @@ function Index() {
           <div
             style={{
               background: "#fff",
-              maxWidth: 360,
+              maxWidth: 380,
               width: "100%",
-              padding: "26px 24px 22px",
-              borderRadius: 6,
+              padding: "32px 28px 24px",
+              borderRadius: 4,
               position: "relative",
               textAlign: "center",
               boxSizing: "border-box",
@@ -184,8 +256,8 @@ function Index() {
               aria-label="Close"
               style={{
                 position: "absolute",
-                top: 8,
-                right: 12,
+                top: 10,
+                right: 14,
                 background: "none",
                 border: 0,
                 fontSize: 22,
@@ -198,22 +270,23 @@ function Index() {
             <img
               src={LOGO_URL}
               alt="Perceptve"
-              style={{ width: 60, height: "auto", margin: "0 auto 14px", display: "block" }}
+              style={{ width: 60, height: "auto", margin: "0 auto 18px", display: "block" }}
             />
             <h2
               style={{
-                fontSize: 34,
+                fontSize: 42,
                 fontWeight: 800,
                 margin: "4px 0 0",
                 letterSpacing: "1px",
                 lineHeight: 1.05,
+                color: "#000",
               }}
             >
               EARLY
               <br />
               ACCESS
             </h2>
-            <p style={{ fontSize: 16, margin: "8px 0 16px", fontWeight: 500 }}>
+            <p style={{ fontSize: 18, margin: "10px 0 18px", fontWeight: 500, color: "#000" }}>
               + 10% OFF NEXT DROP
             </p>
 
@@ -229,13 +302,20 @@ function Index() {
                     alignItems: "center",
                     border: "1px solid #000",
                     borderRadius: 30,
-                    padding: "6px 14px",
-                    marginBottom: 12,
+                    padding: "8px 14px",
+                    marginBottom: 14,
                     gap: 8,
                   }}
                 >
                   <span style={{ fontSize: 14 }}>🇺🇸</span>
-                  <span style={{ fontSize: 13, borderRight: "1px solid #ddd", paddingRight: 8 }}>
+                  <span
+                    style={{
+                      fontSize: 13,
+                      borderRight: "1px solid #ddd",
+                      paddingRight: 8,
+                      color: "#000",
+                    }}
+                  >
                     +1 ▾
                   </span>
                   <input
@@ -255,7 +335,7 @@ function Index() {
                     }}
                   />
                 </div>
-                <p style={{ fontSize: 9, color: "#333", lineHeight: 1.4, margin: "0 0 14px" }}>
+                <p style={{ fontSize: 9, color: "#333", lineHeight: 1.5, margin: "0 0 16px" }}>
                   *By providing your number and clicking the button, you agree to receive recurring
                   auto-dialed marketing SMS (including cart reminders; AI content; artificial or
                   prerecorded voices) and our <b><u>TERMS OF SERVICE</u></b> (including arbitration).
@@ -267,11 +347,11 @@ function Index() {
                     if (phone.trim().length >= 6) setSignedUp(true);
                   }}
                   style={{
-                    background: "#000",
+                    background: "#111",
                     color: "#fff",
                     border: 0,
-                    borderRadius: 30,
-                    padding: "14px",
+                    borderRadius: 40,
+                    padding: "16px",
                     width: "100%",
                     fontSize: 14,
                     fontWeight: 700,
