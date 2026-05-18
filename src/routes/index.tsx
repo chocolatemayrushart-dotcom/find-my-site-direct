@@ -8,6 +8,7 @@ export const Route = createFileRoute("/")({
 const UNLOCK_KEY = "perceptve_unlocked_v1";
 const PASSWORD = "perceptive";
 const LOGO_URL = "/site/images/SITE_LOGO_970c0ca0-3905-4df0-bd69-b899de9083e2.png";
+const UNLOCK_LOGO_URL = "/site/images/unlock-logo.webp";
 
 function Index() {
   const [unlocked, setUnlocked] = useState(false);
