@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "Exact Website Finder creates precise website replicas based on provided designs and assets." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4c630ed3-f0b9-4f4d-8874-27bcdcc6e7a7/id-preview-b2e4ce9f--1c58c0d4-0bde-4ae1-b36a-20e719a31dfd.lovable.app-1779111907412.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4c630ed3-f0b9-4f4d-8874-27bcdcc6e7a7/id-preview-b2e4ce9f--1c58c0d4-0bde-4ae1-b36a-20e719a31dfd.lovable.app-1779111907412.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/21f1c007-895c-453d-bf65-687c98ee93a4/id-preview-f981dfeb--1c58c0d4-0bde-4ae1-b36a-20e719a31dfd.lovable.app-1779117223886.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/21f1c007-895c-453d-bf65-687c98ee93a4/id-preview-f981dfeb--1c58c0d4-0bde-4ae1-b36a-20e719a31dfd.lovable.app-1779117223886.png" },
     ],
     links: [
       {
