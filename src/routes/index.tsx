@@ -269,7 +269,7 @@ function Index() {
               ×
             </button>
             <img
-              src={LOGO_URL}
+              src={UNLOCK_LOGO_URL}
               alt="Perceptve"
               style={{ width: 60, height: "auto", margin: "0 auto 18px", display: "block" }}
             />
