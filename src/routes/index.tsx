@@ -271,7 +271,7 @@ function Index() {
             <img
               src={UNLOCK_LOGO_URL}
               alt="Perceptve"
-              style={{ width: 60, height: "auto", margin: "0 auto 18px", display: "block" }}
+              style={{ width: 160, height: "auto", margin: "0 auto 18px", display: "block" }}
             />
             <h2
               style={{
