@@ -8,6 +8,7 @@ export const Route = createFileRoute("/")({
 const UNLOCK_KEY = "perceptve_unlocked_v1";
 const PASSWORD = "perceptive";
 const LOGO_URL = "/site/images/SITE_LOGO_970c0ca0-3905-4df0-bd69-b899de9083e2.png";
+const UNLOCK_LOGO_URL = "/site/images/unlock-logo.webp";
 
 function Index() {
   const [unlocked, setUnlocked] = useState(false);
@@ -70,9 +71,9 @@ function Index() {
         {!showPwd ? (
           <>
             <img
-              src={LOGO_URL}
+              src={UNLOCK_LOGO_URL}
               alt="Perceptve"
-              style={{ width: 70, height: "auto", margin: "0 auto 28px", display: "block" }}
+              style={{ width: 90, height: "auto", margin: "0 auto 28px", display: "block" }}
             />
             <h1
               style={{
@@ -268,7 +269,7 @@ function Index() {
               ×
             </button>
             <img
-              src={LOGO_URL}
+              src={UNLOCK_LOGO_URL}
               alt="Perceptve"
               style={{ width: 60, height: "auto", margin: "0 auto 18px", display: "block" }}
             />
