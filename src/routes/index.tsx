@@ -71,9 +71,9 @@ function Index() {
         {!showPwd ? (
           <>
             <img
-              src={LOGO_URL}
+              src={UNLOCK_LOGO_URL}
               alt="Perceptve"
-              style={{ width: 70, height: "auto", margin: "0 auto 28px", display: "block" }}
+              style={{ width: 90, height: "auto", margin: "0 auto 28px", display: "block" }}
             />
             <h1
               style={{
