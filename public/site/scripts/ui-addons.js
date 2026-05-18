@@ -167,42 +167,5 @@
 
   updateCartCount();
 
-  // ---------- 10% off popup ----------
-  if (localStorage.getItem(POPUP_KEY) !== "dismissed") {
-    setTimeout(showPopup, 1200);
-  }
-
-  function showPopup() {
-    const overlay = document.createElement("div");
-    overlay.className = "pv-overlay open";
-    overlay.innerHTML = `
-      <div class="pv-modal">
-        <button class="pv-close" aria-label="Close">&times;</button>
-        <div class="pv-logo">P</div>
-        <p class="sub">UNLOCK</p>
-        <h2>10% OFF</h2>
-        <p class="sub2">YOUR ORDER</p>
-        
-        <div class="pv-phone">
-          <div class="pv-cc"><span class="pv-flag"></span><span>+1</span><span style="font-size:9px">▼</span></div>
-          <input type="tel" placeholder="What is your phone number?" />
-        </div>
-        <p class="pv-disc">*By providing your number and clicking the button, you agree to receive recurring auto-dialed marketing SMS (including cart reminders; AI content; artificial or prerecorded voices) and our <a href="#">TERMS OF SERVICE</a> (including arbitration). Consent is not required to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help; STOP to opt-out. View <a href="#">PRIVACY POLICY</a>.</p>
-        <button class="pv-btn">Sign up now<small>to subscribe to texts</small></button>
-        <button class="pv-no">No Thanks</button>
-        <p class="pv-success" style="display:none">Thanks! Use code <b>WELCOME10</b> at checkout.</p>
-      </div>`;
-    document.body.appendChild(overlay);
-    function dismiss() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
-    function done() { overlay.remove(); localStorage.setItem(POPUP_KEY, "dismissed"); }
-    overlay.querySelector(".pv-close").onclick = dismiss;
-    overlay.querySelector(".pv-no").onclick = dismiss;
-    overlay.addEventListener("click", e => { if (e.target === overlay) dismiss(); });
-    overlay.querySelector(".pv-btn").onclick = function () {
-      const v = overlay.querySelector("input").value.trim();
-      if (v.length < 6) { overlay.querySelector("input").focus(); return; }
-      overlay.querySelector(".pv-success").style.display = "block";
-      setTimeout(done, 2200);
-    };
-  }
+  // 10% off popup removed — using EARLY ACCESS modal from lock page instead
 })();
