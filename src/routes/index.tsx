@@ -206,20 +206,46 @@ function Index() {
           <button
             onClick={() => setShowSignup(true)}
             style={{
-              background: "#000",
+              background: "#1a1d23",
               color: "#fff",
               border: 0,
-              borderRadius: 30,
-              padding: "12px 22px",
-              fontSize: 12,
-              fontWeight: 700,
-              letterSpacing: "1.5px",
+              borderRadius: 999,
+              padding: "18px 36px",
+              fontSize: 18,
+              fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+              fontWeight: 800,
+              letterSpacing: "0.5px",
               cursor: "pointer",
               boxShadow: "0 4px 14px rgba(0,0,0,.25)",
             }}
           >
             UNLOCK ACCESS
           </button>
+          <div
+            style={{
+              display: "flex",
+              gap: 10,
+              marginTop: 8,
+              paddingLeft: 4,
+              fontSize: 10,
+              letterSpacing: "0.5px",
+              color: "#000",
+            }}
+          >
+            <a
+              href="/site/pages/policies.html"
+              style={{ color: "#000", textDecoration: "underline" }}
+            >
+              Terms of Service
+            </a>
+            <span>·</span>
+            <a
+              href="/site/pages/policies.html"
+              style={{ color: "#000", textDecoration: "underline" }}
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       )}
 
