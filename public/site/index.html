@@ -25,7 +25,7 @@
   <meta property="og:image:height" content="2000"><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Perceptve">
 <meta name="twitter:description" content="Perceptve/Perceptvemeans">
-     <script type="text/javascript" async src="./scripts/sdk-script-loader.bundle.js"></script><script src="/signals/config/2284771735367469" async></script><script async="true" src="./scripts/fbevents.js"></script><script type="text/javascript" async src="./scripts/trekkie.storefront.82900183b05ff23f8455639d7eb513d638b0a722.min.js"></script><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/85171962151/digital_wallets/dialog">
+     <script type="text/javascript" async src="./scripts/sdk-script-loader.bundle.js"></script><script src="/signals/config/2284771735367469" async></script><script async="true" src="./scripts/fbevents.js"></script><script type="text/javascript" async src="./scripts/trekkie.storefront.2aca6cb2c1aba778eb370d48aa89866e7dbe9588.min.js"></script><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/85171962151/digital_wallets/dialog">
 <meta name="shopify-checkout-api-token" content="434f47889be075bde0f8c047ea062da9">
 <script async="async" src="./scripts/preloads.js"></script>
 <link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
@@ -43,7 +43,10 @@ Shopify.theme.style = {"id":null,"handle":null};
 Shopify.cdnHost = "perceptve.com/cdn";
 Shopify.routes = Shopify.routes || {};
 Shopify.routes.root = "/";
-Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</script>
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
 <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
 <script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
 <script>
@@ -67,7 +70,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
 <script>
   window.Shopify = window.Shopify || {};
   if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
-  window.Shopify.featureAssets['shop-js'] = {"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"avatar":["modules/v2/loader.avatar.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"]};
+  window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.en.esm.js"],"shop-button":["modules/v2/loader.shop-button.en.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.en.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.en.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.en.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.en.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.en.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.en.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.en.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.en.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.en.esm.js"],"avatar":["modules/v2/loader.avatar.en.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.en.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.en.esm.js"],"pay-button":["modules/v2/loader.pay-button.en.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.en.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.en.esm.js"],"shop-login":["modules/v2/loader.shop-login.en.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.en.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.en.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.en.esm.js"]};
 </script>
 <script>(function() {
   var isLoaded = false;
@@ -90,7 +93,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":85171962151,"offset":-18000,"reqid":"f97fcb6c-7227-4f01-b294-8ad15342ed86-1778671915","pageurl":"perceptve.com\/","t":"prospect","u":"e8652a6c1f1e","p":"home"};</script>
+<script id="__st">var __st={"a":85171962151,"offset":-18000,"reqid":"d9c662e2-2653-4678-b47f-35d53552dcd2-1779196121","pageurl":"perceptve.com\/","u":"82f6246091ad","p":"home"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="./scripts/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -129,7 +132,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
 
       </style>
 
-<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
   
       <style data-shopify="">
@@ -219,11 +222,11 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
 </script>
-<script id="web-pixels-manager-setup">(function(){var wpmLoader=function(){"use strict";return function(e,d,r,n){var o=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};if(!Boolean(null==(i=null==(a=window.Shopify)?void 0:a.analytics)?void 0:i.replayQueue)){var a,i;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l,u,c,m,p,f,h,g,y,w,v,b,S,P=(u=(l={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,c=l.legacy,(m=navigator.userAgent).match(u)?"modern":m.match(c)?"legacy":"unknown"),C="modern"===P?"modern":"legacy",_=(null!=n?n:{modern:"",legacy:""})[C],O=[(p={baseUrl:d,hashVersion:r,buildTarget:C}).baseUrl,"/wpm","/b",p.hashVersion,"modern"===p.buildTarget?"m":"l",".js"].join(""),U=(f={version:r,bundleTarget:P,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint},h=f.version,g=f.bundleTarget,y=f.surface,w=f.pageUrl,v=f.monorailEndpoint,{emit:function(e){var d=e.status,r=e.errorMsg,n=(new Date).getTime(),o=JSON.stringify({metadata:{event_sent_at_ms:n},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:h,bundle_target:g,page_url:w,status:d,surface:y,error_msg:r},metadata:{event_created_at_ms:n}}]});if(!v)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(v,o)}catch(e){}var a=new XMLHttpRequest;try{return a.open("POST",v,!0),a.setRequestHeader("Content-Type","text/plain"),a.send(o),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}});try{o.browserTarget=P,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,a=e.onerror,i=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,i&&(l.integrity=i,l.crossOrigin="anonymous"),s)for(var m in s)if(Object.prototype.hasOwnProperty.call(s,m))try{l.dataset[m]=s[m]}catch(e){}if(o&&l.addEventListener("load",o),a&&l.addEventListener("error",a),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:O,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null==(d=null==(e=window.Shopify)?void 0:e.analytics)?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)}),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return U.emit({status:"failed",errorMsg:"".concat(O," has failed to load")})},sri:(b=_,S=/^sha384-[A-Za-z0-9+/=]+$/,"string"==typeof b&&S.test(b)?_:""),scriptDataAttributes:o}),U.emit({status:"loading"})}catch(e){U.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}}}();wpmLoader({shopId: 85171962151,storefrontBaseUrl: "https://perceptve.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86","d5bdd5d0","5acaffe6"],webPixelsConfigList: [{"id":"2136867111","configuration":"{\"pixel_id\":\"2284771735367469\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"d72ab942028ee4f6bccc581083be605e","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"1466532135","configuration":"{\"shopId\":\"339486\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"91ef52b92bfb6ed320ef1c1053777453","type":"APP","apiClientId":2328352,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0460","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0460","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Perceptve","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"7c5b89-2.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/perceptve.com"},"customer":null,"cart":{"cost":{"totalAmount":{"amount":48.95,"currencyCode":"USD"}},"lines":[{"cost":{"totalAmount":{"amount":48.95,"currencyCode":"USD"}},"merchandise":{"price":{"amount":48.95,"currencyCode":"USD"},"product":{"title":"Mirror Zip-Up","vendor":"Perceptve","id":"10167360127271","untranslatedTitle":"Mirror Zip-Up","url":"\/products\/mirror-zip-up","type":""},"id":"51274178920743","image":{"src":"\/\/perceptve.com\/cdn\/shop\/files\/204ebeb0e0ac464f880af211e9fe18e4.png?v=1775792475"},"sku":null,"title":"X-Large","untranslatedTitle":"X-Large"},"quantity":1}],"totalQuantity":1,"attributes":[],"id":"hWNC5tfYEzewzXTGJiTsjxcA"},"checkout":null,"productVariants":[],"products":null,"purchasingCompany":null,"page":null},},"https://perceptve.com/cdn","81a24193wb0bf602apf85b30fcm71c6b379",{"modern":"","legacy":""},{"trekkieShim":true,"pageType":"home","shopId":"85171962151","storefrontBaseUrl":"https:\/\/perceptve.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\", \"d5bdd5d0\", \"5acaffe6\"]","isMerchantRequest":"false","hashVersion":"81a24193wb0bf602apf85b30fcm71c6b379","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script async src="./scripts/b81a24193wb0bf602apf85b30fcm71c6b379m.js" data-trekkie-shim="true" data-page-type="home" data-shop-id="85171962151" data-storefront-base-url="https://perceptve.com" data-extension-base-url="https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager" data-surface="storefront-renderer" data-enabled-beta-flags="[&quot;2dca8a86&quot;, &quot;d5bdd5d0&quot;, &quot;5acaffe6&quot;]" data-is-merchant-request="false" data-hash-version="81a24193wb0bf602apf85b30fcm71c6b379" data-publish="custom" data-events="[[&quot;page_viewed&quot;,{}]]" data-browser-target="modern"></script><script>
+<script id="web-pixels-manager-setup">(function(){var wpmLoader=function(){"use strict";return function(e,d,r,n){var o=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};if(!Boolean(null==(i=null==(a=window.Shopify)?void 0:a.analytics)?void 0:i.replayQueue)){var a,i;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l,u,c,m,p,f,h,g,y,w,v,b,S,P=(u=(l={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,c=l.legacy,(m=navigator.userAgent).match(u)?"modern":m.match(c)?"legacy":"unknown"),C="modern"===P?"modern":"legacy",_=(null!=n?n:{modern:"",legacy:""})[C],O=[(p={baseUrl:d,hashVersion:r,buildTarget:C}).baseUrl,"/wpm","/b",p.hashVersion,"modern"===p.buildTarget?"m":"l",".js"].join(""),U=(f={version:r,bundleTarget:P,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint},h=f.version,g=f.bundleTarget,y=f.surface,w=f.pageUrl,v=f.monorailEndpoint,{emit:function(e){var d=e.status,r=e.errorMsg,n=(new Date).getTime(),o=JSON.stringify({metadata:{event_sent_at_ms:n},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:h,bundle_target:g,page_url:w,status:d,surface:y,error_msg:r},metadata:{event_created_at_ms:n}}]});if(!v)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(v,o)}catch(e){}var a=new XMLHttpRequest;try{return a.open("POST",v,!0),a.setRequestHeader("Content-Type","text/plain"),a.send(o),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}});try{o.browserTarget=P,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,a=e.onerror,i=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,i&&(l.integrity=i,l.crossOrigin="anonymous"),s)for(var m in s)if(Object.prototype.hasOwnProperty.call(s,m))try{l.dataset[m]=s[m]}catch(e){}if(o&&l.addEventListener("load",o),a&&l.addEventListener("error",a),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:O,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null==(d=null==(e=window.Shopify)?void 0:e.analytics)?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)}),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return U.emit({status:"failed",errorMsg:"".concat(O," has failed to load")})},sri:(b=_,S=/^sha384-[A-Za-z0-9+/=]+$/,"string"==typeof b&&S.test(b)?_:""),scriptDataAttributes:o}),U.emit({status:"loading"})}catch(e){U.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}}}();wpmLoader({shopId: 85171962151,storefrontBaseUrl: "https://perceptve.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86","d5bdd5d0","5acaffe6"],webPixelsConfigList: [{"id":"2136867111","configuration":"{\"pixel_id\":\"2284771735367469\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"d72ab942028ee4f6bccc581083be605e","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"1466532135","configuration":"{\"shopId\":\"339486\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"91ef52b92bfb6ed320ef1c1053777453","type":"APP","apiClientId":2328352,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted","enabledFlags":["9a3ed68a"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0460","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0460","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Perceptve","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"7c5b89-2.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/perceptve.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":null,"purchasingCompany":null,"page":null},},"https://perceptve.com/cdn","7a919571w0b784b64p16d009bem0237e62e",{"modern":"","legacy":""},{"trekkieShim":true,"pageType":"home","shopId":"85171962151","storefrontBaseUrl":"https:\/\/perceptve.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\", \"d5bdd5d0\", \"5acaffe6\"]","isMerchantRequest":"false","hashVersion":"7a919571w0b784b64p16d009bem0237e62e","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script async src="./scripts/b7a919571w0b784b64p16d009bem0237e62em.js" data-trekkie-shim="true" data-page-type="home" data-shop-id="85171962151" data-storefront-base-url="https://perceptve.com" data-extension-base-url="https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager" data-surface="storefront-renderer" data-enabled-beta-flags="[&quot;2dca8a86&quot;, &quot;d5bdd5d0&quot;, &quot;5acaffe6&quot;]" data-is-merchant-request="false" data-hash-version="7a919571w0b784b64p16d009bem0237e62e" data-publish="custom" data-events="[[&quot;page_viewed&quot;,{}]]" data-browser-target="modern"></script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'USD';
-  var meta = {"page":{"pageType":"home","requestId":"f97fcb6c-7227-4f01-b294-8ad15342ed86-1778671915"}};
+  var meta = {"page":{"pageType":"home","requestId":"d9c662e2-2653-4678-b47f-35d53552dcd2-1779196121"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -354,20 +357,20 @@ script.onerror = function(e) {
       theme_id: 182959276327,
       app_name: "storefront",
       context_url: window.location.href,
-      source_url: "//perceptve.com/cdn/s/trekkie.storefront.82900183b05ff23f8455639d7eb513d638b0a722.min.js"});
+      source_url: "//perceptve.com/cdn/s/trekkie.storefront.2aca6cb2c1aba778eb370d48aa89866e7dbe9588.min.js"});
 
   };
   scriptFallback.async = true;
-  scriptFallback.src = '//perceptve.com/cdn/s/trekkie.storefront.82900183b05ff23f8455639d7eb513d638b0a722.min.js';
+  scriptFallback.src = '//perceptve.com/cdn/s/trekkie.storefront.2aca6cb2c1aba778eb370d48aa89866e7dbe9588.min.js';
   first.parentNode.insertBefore(scriptFallback, first);
 };
 script.async = true;
-script.src = '//perceptve.com/cdn/s/trekkie.storefront.82900183b05ff23f8455639d7eb513d638b0a722.min.js';
+script.src = '//perceptve.com/cdn/s/trekkie.storefront.2aca6cb2c1aba778eb370d48aa89866e7dbe9588.min.js';
 first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":85171962151,"isMerchantRequest":null,"themeId":182959276327,"themeCityHash":"5112893803902383120","contentLanguage":"en","currency":"USD","eventMetadataId":"d0b47267-1da1-4ebc-9973-c5ae6589afe2"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":85171962151,"isMerchantRequest":null,"themeId":182959276327,"themeCityHash":"5112893803902383120","contentLanguage":"en","currency":"USD","eventMetadataId":"67d5a31d-60ce-46a3-8ce4-37e2a4e85095"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -382,7 +385,7 @@ first.parentNode.insertBefore(script, first);
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"f97fcb6c-7227-4f01-b294-8ad15342ed86-1778671915","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"d9c662e2-2653-4678-b47f-35d53552dcd2-1779196121","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -397,7 +400,7 @@ first.parentNode.insertBefore(script, first);
     eventsListenerScript.src = "//perceptve.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js";
     document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 })();</script><script async src="./scripts/shop_events_listener-3da45d37.js"></script>
-<script defer src="./scripts/shopify-perf-kit-3.3.1.min.js" data-application="storefront-renderer" data-shop-id="85171962151" data-render-region="gcp-us-east1" data-page-type="index" data-theme-instance-id="182959276327" data-theme-name="EYEZY ULTIMATE" data-theme-version="1.0.1" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-shs-beacon-endpoint="https://perceptve.com/api/collect"></script>
+<script defer src="./scripts/shopify-perf-kit-3.5.0.min.js" data-application="storefront-renderer" data-shop-id="85171962151" data-render-region="gcp-us-east1" data-page-type="index" data-theme-instance-id="182959276327" data-theme-name="EYEZY ULTIMATE" data-theme-version="1.0.1" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-shs-beacon-endpoint="https://perceptve.com/api/collect"></script>
 <style>
 .pageloader-logo-text{
   font-family: var(--font-heading-family) !important;
@@ -1741,18 +1744,18 @@ gw-radio label.gw-radio__input-label u {
   text-decoration: underline;
   font-size: 1em; /* Inherit from parent label (1.2em) */
   font-weight: normal;
-}</style><style></style><link rel="stylesheet" href="./styles/Metropolis.css"><link rel="stylesheet" href="./styles/Metropolis.css"><link rel="stylesheet" type="text/css" id="ttEmbedLibCSS" href="./styles/embed_lib_v1.0.13.css"><link rel="preconnect" href="https://www.tiktok.com" crossorigin=""><link rel="preconnect" href="https://lf16-tiktok-web.tiktokcdn-us.com" crossorigin=""><link rel="preconnect" href="https://libraweb.tiktokw.us" crossorigin=""><script src="./scripts/recordConsoleEvents.js"></script><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/polyfills.BGEdQoKJ.js" crossorigin=""><script type="text/javascript" id="ps-sdk-loader" src="./scripts/sdk.bundle.js"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/app.sxbXpbZB.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/esnext-vendor.DQH3vqnI.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/browser.9BKi76Up.js" crossorigin=""><script type="module" defer src="./scripts/consent-tracking-api.js"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShopPayProgressIntercepts.izbEckkD.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/Theme-utilities.3acRmz-2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUnauthenticatedErrorModal.ClU4hPQw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/phone-phoneCountryCode.7_Hq8N2a.js" crossorigin=""><style id="ps-scroll-lock-styles">
+}</style><style></style><link rel="stylesheet" type="text/css" id="ttEmbedLibCSS" href="./styles/embed_lib_v1.0.13.css"><link rel="stylesheet" href="./styles/Metropolis.css"><link rel="stylesheet" href="./styles/Metropolis.css"><link rel="preconnect" href="https://www.tiktok.com" crossorigin=""><link rel="preconnect" href="https://lf16-tiktok-web.tiktokcdn-us.com" crossorigin=""><link rel="preconnect" href="https://libraweb.tiktokw.us" crossorigin=""><script src="./scripts/recordConsoleEvents.js"></script><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/polyfills.CgsWKOqO.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/app.DMGchhmv.js" crossorigin=""><script type="text/javascript" id="ps-sdk-loader" src="./scripts/sdk.bundle.js"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/esnext-vendor.BNu0nRRF.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/browser.D-Yw77E5.js" crossorigin=""><script type="module" defer src="./scripts/consent-tracking-api.js"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/phone-phoneCountryCode.D9Ef9jSz.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/types-UnauthenticatedErrorModalPayload.D5uRHJkX.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/images-payment-icon.C_9SDN8i.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/context-utilities.BYGiwUU9.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/utilities-shop-discount-offer.BAs3cG2O.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/utilities-alternativePaymentCurrency.B_jZRGdv.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/extensibility-shared.CMvyuPPG.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/shared-unactionable-errors.DOUEvZ2R.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/purchasing-company-isValidPurchasingCompanyBillingAddress.Ceu7tfN_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/utils-getCommonShopPayExternalTelemetryAttributes.CPzzJhqO.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShopPayCheckoutGqlVersion.Brsjigmz.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/graphql-ShopPayCheckoutSessionQuery.BTnQoLzV.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/helpers-setAddressErrors.ZjzfnRAh.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/CaptureEvents-ButtonWithRegisterWebPixel.BlNmCHh0.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/images-flag-icon.C_eXYJRt.js" crossorigin=""><style id="ps-scroll-lock-styles">
       .ps-scroll-lock {
         overflow: hidden !important;
       }
-    </style><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/extensibility-shared.BNiEBWZD.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/shared-unactionable-errors.DgdsY-4U.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/graphql-ShopPayCheckoutSessionQuery.RuTrkRUe.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/helpers-setAddressErrors.CQQw7hfa.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/FullScreenBackground.BTlnbFnw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/images-flag-icon.C_eXYJRt.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/images-payment-icon.C_9SDN8i.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/locale-en.BsqpfgIS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/page-OnePage.C4gt2u-7.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/MarketsProDisclaimer.KyIPG1hQ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/CrossBorderConsolidation.BdYat2qa.js" crossorigin=""></head>
+    </style><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/FullScreenBackground.CL-4aZEV.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/locale-en.BrvYy-zJ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/page-OnePage.Ds4buI37.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useWalletsTimeout.DJVmdfaD.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/remember-me-hooks.BAHGsEaj.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/MarketsProDisclaimer.DbWe6_GS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/CrossBorderConsolidation.DwWg_sp_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/useShopPayButtonClassName.CYWKLBs-.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUnauthenticatedErrorModal.c5W6jSr8.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ChangeCompanyLocationLink.Bfq15_9x.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/WalletsSandbox-WalletSandbox.CKZNN14_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useForceShopPayUrl.D1fQW7Z5.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/GooglePayButton-index.DKX-ECpb.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ShippingGroupsSummaryLine.DqhyxHyR.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/StackedMerchandisePreview.C1CNXY59.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/AutocompleteField-hooks.BGVS8gE_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/LocalizationExtensionField.DUvWoxhK.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShopPayPaymentRequiredMethod.scmHyT0X.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUpdateCheckoutAddress.BbjtIPcf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ShopPayOptInDisclaimer.BqDQ2EcM.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShowShopPayOptin.DQwgiiLI.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useHasOrdersFromMultipleShops.DXhqPPVh.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useGeneralPaymentErrorMessage.Nk-I5iIu.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/PayPalOverCaptureInfoBanner.DhQAW1WM.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/RememberMeDescriptionText.C03nbczk.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/Section.CCT06yNm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/MobileOrderSummary.D12NH4MS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useOnePageFormSubmit.Cjr-tt_g.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/utilities-get-negotiation-input.C9ehnNQQ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/shop-cash-constants.D-jfxMK5.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/PaymentErrorBanner.dQHZuDYf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/StockProblems-StockProblemsLineItemList.D5CPj8t9.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/DutyOptions.PsfwFOoR.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ShipmentBreakdown.CKp4yl6M.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/MerchandiseModal.BjHXIEhZ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/extension-targets-shipping-options.Befnrx5F.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ShippingMethodSelector.D_GbWQFC.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/SubscriptionPriceBreakdown.CJOlszpo.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/hooks-useSubscribeMessenger.75AKZfXT.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/app.DQm2XSFQ.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/phoneCountryCode.Bz45BrAn.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/UnauthenticatedErrorModalPayload.CO286Meg.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ButtonWithRegisterWebPixel.BoOgF1Wk.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/FullScreenBackground.B_iZlQze.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/OnePage.Du-yF2xV.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/CrossBorderConsolidation.CRDql5Io.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/LocalizationExtensionField.D33rTGk1.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/MobileOrderSummary.BLCAQEbk.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useOnePageFormSubmit.CFcgLtAD.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShopPayOptInDisclaimer.DSXJIrkc.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ChangeCompanyLocationLink.uqpm88mq.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Section.CU18S7Ap.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayButtonClassName.Ho_Bkwiw.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/DutyOptions.LcqrKXE1.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PayPalOverCaptureInfoBanner.CuS5ve3d.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/WalletSandbox.CnR7qNLY.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingMethodSelector.B0hio2RO.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/SubscriptionPriceBreakdown.BSemv9tH.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/StackedMerchandisePreview.D6OuIVjc.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="font" type="font/woff2" href="https://fonts.shopifycdn.com/archivo_narrow/archivonarrow_n4.5c3bab850a22055c235cf940f895d873a8689d70.woff2?h1=cGVyY2VwdHZlLmNvbQ&hmac=80eb883a158b6b47c89a4ec5d227cc128e4693b3a565fad4a8b9d16580753cfa" crossorigin=""><link rel="prefetch" fetchpriority="low" as="font" type="font/woff2" href="https://fonts.shopifycdn.com/archivo_narrow/archivonarrow_n7.c049bee49aa92b4cfee86dd4e79c9194b8519e2b.woff2?h1=cGVyY2VwdHZlLmNvbQ&hmac=5313251aac337d4f73fd3c165f8e81b7e140c0f5e53c30981e045ceefd91bb5b" crossorigin=""><link rel="prefetch" fetchpriority="low" as="image" href="https://cdn.shopify.com/s/files/1/0851/7196/2151/files/site_logo_8cd9a96d-d45c-4dff-aa0e-770289a12a55_x320.png?v=1750218471" crossorigin=""></head>
   
   
     
 
-<body data-new-gr-c-s-check-loaded="14.1290.0" data-gr-ext-installed=""><div id="pageloader" class="pageloader">
+<body data-new-gr-c-s-check-loaded="14.1294.0" data-gr-ext-installed=""><div id="pageloader" class="pageloader">
   <div class="pageloader-logo-cont"><img class="pageloader-logo" src="./images/site_logo.png" loading="eager"></div>
-</div><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-81a24193wb0bf602apf85b30fcm71c6b379" src="https://perceptve.com/web-pixels@81a24193wb0bf602apf85b30fcm71c6b379/custom/web-pixel-shopify-custom-pixel@0460/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-81a24193wb0bf602apf85b30fcm71c6b379" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div>
+</div><div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-7a919571w0b784b64p16d009bem0237e62e" src="https://perceptve.com/web-pixels@7a919571w0b784b64p16d009bem0237e62e/custom/web-pixel-shopify-custom-pixel@0460/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-7a919571w0b784b64p16d009bem0237e62e" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div>
 
 
   
@@ -1911,7 +1914,7 @@ gw-radio label.gw-radio__input-label u {
   }
 
   .announcement-container{
-    background: #000000;
+    background: #7f0000;
     padding: 8px 0px;
   }
   .announcement-content{
@@ -1934,6 +1937,12 @@ gw-radio label.gw-radio__input-label u {
     }
   }
 </style>
+
+<a class="announcement-link" href="./pages/shipping-policy.html">
+  <div class="announcement-container">
+    <div class="announcement-content">Do Not Place an Order Unless You Have Read and Agree to Our Shipping and Fulfillment Policies.</div>
+  </div>
+</a>
 
 <div class="page-width">
 <div class="header-wrapper">
@@ -2000,7 +2009,7 @@ gw-radio label.gw-radio__input-label u {
     
     <a class="account" href="./pages/account.html">Account</a>
     
-    <a href="./pages/cart.html" class="js-cart-toggle" data-cart-link-bound="true">Cart (<span id="CartCount">1</span>)</a>
+    <a href="./pages/cart.html" class="js-cart-toggle" data-cart-link-bound="true">Cart (<span id="CartCount">0</span>)</a>
 </div>
 </div>
 </div>
@@ -2676,6 +2685,293 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 
+</div><div id="shopify-section-template--25826209857831__custom_liquid_wjbFbP" class="shopify-section"><style>
+  .custom-liquid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+</style>
+<div class="page-width">
+  <div class="custom-liquid">
+      <style>
+  .perceptve-policy-strip {
+    --text: #111111;
+    --muted: #6f6f6f;
+    --line: rgba(17,17,17,0.12);
+    --line-strong: rgba(17,17,17,0.22);
+    --shadow: 0 14px 34px rgba(0,0,0,0.06);
+
+    width: 100%;
+    max-width: 980px;
+    margin: 22px auto;
+    padding: 0 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--text);
+    box-sizing: border-box;
+  }
+
+  .perceptve-policy-strip * {
+    box-sizing: border-box;
+  }
+
+  .perceptve-policy-strip__shell {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at top left, rgba(0,0,0,0.025), transparent 34%),
+      linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,248,0.88));
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  .perceptve-policy-strip__shell.is-visible {
+    animation: policy-strip-in 0.75s cubic-bezier(.2,.8,.2,1) forwards;
+  }
+
+  .perceptve-policy-strip__shell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        115deg,
+        transparent 0%,
+        transparent 42%,
+        rgba(255,255,255,0.45) 50%,
+        transparent 58%,
+        transparent 100%
+      );
+    transform: translateX(-120%);
+    pointer-events: none;
+  }
+
+  .perceptve-policy-strip__shell.is-visible::before {
+    animation: policy-strip-sheen 1.2s cubic-bezier(.2,.8,.2,1) 0.35s 1;
+  }
+
+  .perceptve-policy-strip__label {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #111111;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.76);
+  }
+
+  .perceptve-policy-strip__content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+  }
+
+  .perceptve-policy-strip__title {
+    margin: 0 0 4px;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+
+  .perceptve-policy-strip__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--muted);
+  }
+
+  .perceptve-policy-strip__text strong {
+    color: #111111;
+    font-weight: 700;
+  }
+
+  .perceptve-policy-strip__button {
+    position: relative;
+    z-index: 1;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid #111111;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition:
+      transform 0.22s ease,
+      background 0.22s ease,
+      color 0.22s ease,
+      box-shadow 0.22s ease;
+  }
+
+  .perceptve-policy-strip__button:hover {
+    transform: translateY(-2px);
+    background: transparent;
+    color: #111111;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+  }
+
+  .perceptve-policy-strip__fineprint {
+    grid-column: 1 / -1;
+    display: none;
+    margin-top: 2px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(17,17,17,0.08);
+    font-size: 11px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .perceptve-policy-strip__fineprint span {
+    display: inline-block;
+    margin-right: 14px;
+  }
+
+  .perceptve-policy-strip__fineprint strong {
+    color: #111111;
+    font-weight: 700;
+  }
+
+  .perceptve-policy-strip__shell:hover .perceptve-policy-strip__fineprint {
+    display: block;
+  }
+
+  @keyframes policy-strip-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes policy-strip-sheen {
+    from {
+      transform: translateX(-120%);
+    }
+    to {
+      transform: translateX(120%);
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .perceptve-policy-strip {
+      margin: 18px auto;
+      padding: 0 12px;
+    }
+
+    .perceptve-policy-strip__shell {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 16px;
+    }
+
+    .perceptve-policy-strip__label {
+      width: fit-content;
+    }
+
+    .perceptve-policy-strip__button {
+      width: 100%;
+    }
+
+    .perceptve-policy-strip__fineprint {
+      display: block;
+      padding-top: 12px;
+    }
+
+    .perceptve-policy-strip__shell:hover .perceptve-policy-strip__fineprint {
+      display: block;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .perceptve-policy-strip__shell,
+    .perceptve-policy-strip__shell::before {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+
+<div class="perceptve-policy-strip">
+  <div class="perceptve-policy-strip__shell is-visible" id="perceptve-policy-strip-shell">
+    <div class="perceptve-policy-strip__label">Required Notice</div>
+
+    <div class="perceptve-policy-strip__content">
+      <h2 class="perceptve-policy-strip__title">
+        Read Before Ordering
+      </h2>
+      <p class="perceptve-policy-strip__text">
+        Review shipping, processing, fulfillment, tracking, and delay policies before checkout.
+        <strong>Do not purchase if you do not agree.</strong>
+      </p>
+    </div>
+
+    <a href="./pages/policies.html" class="perceptve-policy-strip__button">
+      View Policies
+    </a>
+
+    <div class="perceptve-policy-strip__fineprint">
+      <span><strong>Processing:</strong> 2–4 weeks.</span>
+      <span><strong>Shipping:</strong> USPS, around 5 business days after processing.</span>
+      <span><strong>Tracking:</strong> Sent by email once shipped.</span>
+      <span><strong>Delays:</strong> Carrier delays are outside our control.</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var shell = document.getElementById('perceptve-policy-strip-shell');
+    if (!shell) return;
+
+    function revealPolicyStrip() {
+      shell.classList.add('is-visible');
+    }
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            revealPolicyStrip();
+            observer.unobserve(shell);
+          }
+        });
+      }, { threshold: 0.18 });
+
+      observer.observe(shell);
+    } else {
+      setTimeout(revealPolicyStrip, 120);
+    }
+  })();
+</script>
+  </div>
+</div>
 </div><div id="shopify-section-template--25826209857831__featured_collection_X9UqP7" class="shopify-section"><style>
   .section-template--25826209857831__featured_collection_X9UqP7-padding {
     margin-top: 30px;
@@ -2957,150 +3253,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="loader"></div>
 
   <div class="product-image-container" data-hover-bound="true">
-    <a class="product-list__img-link" href="./pages/a-better-place.html">
-      
-      
-        <img class="product-card__image is-active" src="./images/b08060547e32416c950c1c275a9aeca2.png" alt="A Better Place" onload="this.closest('.product-list__product-block').classList.add('loaded')">
-      
-        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767876936.png" alt="A Better Place">
-      
-    </a>
-
-    
-      <button class="product-card-arrow product-card-arrow--prev" type="button" aria-label="Previous image" data-bound="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64932 -3.78074e-07L9.9 1.26483L2.46489 9.01181L3.25767 9.83808L3.25371 9.83354L9.86001 16.7161L8.62735 18C6.80144 16.0978 1.70389 10.7869 3.93919e-07 9.01181C1.2655 7.6925 0.0313758 8.97821 8.64932 -3.78074e-07Z" fill="#000000" />
-        </svg>
-      </button>
-      <button class="product-card-arrow product-card-arrow--next" type="button" aria-label="Next image" data-bound="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25058 -3.78074e-07L-0.000101383 1.26483L7.43501 9.01181L6.64223 9.83808L6.64619 9.83354L0.0398882 16.7161L1.27255 18C3.09846 16.0978 8.19601 10.7869 9.8999 9.01181C8.6344 7.6925 9.86853 8.97821 1.25058 -3.78074e-07Z" fill="#000000" />
-        </svg>
-      </button>
-    
-  </div>
-
-  <a class="product-list__product-name" href="./pages/a-better-place.html">A Better Place</a>
-
-  
-    
-    
-      
-        
-    
-      <p class="product-list__product-price">$34.99 USD</p>
-    
-  
-</div>
-
-
-    
-      <style>
-.product-card-track {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  transform: translateX(0);
-}
-.product-list__img-link{
-  position: relative;
-}
-
-.product-card-track{
-  position: absolute;
-  inset: 0;
-  height: 100%;
-}
-
-
-.product-image-container {
-  overflow: hidden;
-  position: relative;
-  touch-action: pan-y;
-}
-
-.product-card__image {
-  flex: 0 0 100%;
-  width: 100%;
-}
-
-
-  .product-image-container{
-  position: relative;
-  overflow: hidden;
-}
-
-.product-list__img-link{
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.product-list__img-link::before{
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-  width: 100%;
-}
-
-.product-card__image{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity .2s ease;
-}
-
-.product-card__image.is-active{
-  opacity: 1;
-  visibility: visible;
-}
-
-/* стрелки */
-.product-card-arrow{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  padding: 14px; /* размер клика */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .15s ease;
-}
-
-.product-card-arrow--prev{ left: 0; }
-.product-card-arrow--next{ right: 0; }
-
-.product-image-container:hover .product-card-arrow{
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* на мобилке стрелки не нужны */
-@media (max-width: 748px){
-  .product-image-container:hover .product-card-arrow{
-    opacity: 0;
-    pointer-events: none;
-  }
-  .product-card-arrow{ display:none; }
-}
-
-</style>
-
-<div class="product-list__product-block fade-in loaded" data-product-card="" data-product-card-bound="true" data-product-card-resize-bound="true">
-  <div class="loader"></div>
-
-  <div class="product-image-container" data-hover-bound="true">
     <a class="product-list__img-link" href="./pages/mirror-zip-up.html">
       
       
@@ -3245,16 +3397,12 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="loader"></div>
 
   <div class="product-image-container" data-hover-bound="true">
-    <a class="product-list__img-link" href="./pages/vestige.html">
+    <a class="product-list__img-link" href="./pages/a-better-place.html">
       
       
-        <img class="product-card__image is-active" src="./images/image_2026-04-11_220700926.png" alt="Vestige" onload="this.closest('.product-list__product-block').classList.add('loaded')">
+        <img class="product-card__image is-active" src="./images/b08060547e32416c950c1c275a9aeca2.png" alt="A Better Place" onload="this.closest('.product-list__product-block').classList.add('loaded')">
       
-        <img class="product-card__image" src="./images/image_2026-04-11_220719061.png" alt="Vestige">
-      
-        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767803991.png" alt="Vestige">
-      
-        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767847775.png" alt="Vestige">
+        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767876936.png" alt="A Better Place">
       
     </a>
 
@@ -3272,7 +3420,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </div>
 
-  <a class="product-list__product-name" href="./pages/vestige.html">Vestige</a>
+  <a class="product-list__product-name" href="./pages/a-better-place.html">A Better Place</a>
 
   
     
@@ -3537,6 +3685,154 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="loader"></div>
 
   <div class="product-image-container" data-hover-bound="true">
+    <a class="product-list__img-link" href="./pages/vestige.html">
+      
+      
+        <img class="product-card__image is-active" src="./images/image_2026-04-11_220700926.png" alt="Vestige" onload="this.closest('.product-list__product-block').classList.add('loaded')">
+      
+        <img class="product-card__image" src="./images/image_2026-04-11_220719061.png" alt="Vestige">
+      
+        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767803991.png" alt="Vestige">
+      
+        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767847775.png" alt="Vestige">
+      
+    </a>
+
+    
+      <button class="product-card-arrow product-card-arrow--prev" type="button" aria-label="Previous image" data-bound="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64932 -3.78074e-07L9.9 1.26483L2.46489 9.01181L3.25767 9.83808L3.25371 9.83354L9.86001 16.7161L8.62735 18C6.80144 16.0978 1.70389 10.7869 3.93919e-07 9.01181C1.2655 7.6925 0.0313758 8.97821 8.64932 -3.78074e-07Z" fill="#000000" />
+        </svg>
+      </button>
+      <button class="product-card-arrow product-card-arrow--next" type="button" aria-label="Next image" data-bound="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25058 -3.78074e-07L-0.000101383 1.26483L7.43501 9.01181L6.64223 9.83808L6.64619 9.83354L0.0398882 16.7161L1.27255 18C3.09846 16.0978 8.19601 10.7869 9.8999 9.01181C8.6344 7.6925 9.86853 8.97821 1.25058 -3.78074e-07Z" fill="#000000" />
+        </svg>
+      </button>
+    
+  </div>
+
+  <a class="product-list__product-name" href="./pages/vestige.html">Vestige</a>
+
+  
+    
+    
+      
+        
+    
+      <p class="product-list__product-price">$34.99 USD</p>
+    
+  
+</div>
+
+
+    
+      <style>
+.product-card-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  transform: translateX(0);
+}
+.product-list__img-link{
+  position: relative;
+}
+
+.product-card-track{
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+
+.product-image-container {
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+}
+
+.product-card__image {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+
+  .product-image-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.product-list__img-link{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.product-list__img-link::before{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.product-card__image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+
+.product-card__image.is-active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* стрелки */
+.product-card-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 14px; /* размер клика */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease;
+}
+
+.product-card-arrow--prev{ left: 0; }
+.product-card-arrow--next{ right: 0; }
+
+.product-image-container:hover .product-card-arrow{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* на мобилке стрелки не нужны */
+@media (max-width: 748px){
+  .product-image-container:hover .product-card-arrow{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .product-card-arrow{ display:none; }
+}
+
+</style>
+
+<div class="product-list__product-block fade-in loaded" data-product-card="" data-product-card-bound="true" data-product-card-resize-bound="true">
+  <div class="loader"></div>
+
+  <div class="product-image-container" data-hover-bound="true">
     <a class="product-list__img-link" href="./pages/i-cant-explain.html">
       
       
@@ -3573,6 +3869,154 @@ document.addEventListener('DOMContentLoaded', function() {
         
     
       <p class="product-list__product-price">$34.99 USD</p>
+    
+  
+</div>
+
+
+    
+      <style>
+.product-card-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  transform: translateX(0);
+}
+.product-list__img-link{
+  position: relative;
+}
+
+.product-card-track{
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+
+.product-image-container {
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+}
+
+.product-card__image {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+
+  .product-image-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.product-list__img-link{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.product-list__img-link::before{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.product-card__image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+
+.product-card__image.is-active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* стрелки */
+.product-card-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 14px; /* размер клика */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease;
+}
+
+.product-card-arrow--prev{ left: 0; }
+.product-card-arrow--next{ right: 0; }
+
+.product-image-container:hover .product-card-arrow{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* на мобилке стрелки не нужны */
+@media (max-width: 748px){
+  .product-image-container:hover .product-card-arrow{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .product-card-arrow{ display:none; }
+}
+
+</style>
+
+<div class="product-list__product-block fade-in loaded" data-product-card="" data-product-card-bound="true" data-product-card-resize-bound="true">
+  <div class="loader"></div>
+
+  <div class="product-image-container" data-hover-bound="true">
+    <a class="product-list__img-link" href="./pages/vestige-longsleeve.html">
+      
+      
+        <img class="product-card__image is-active" src="./images/cc315b38c5134e1ba545c78c7140819d.png" alt="Vestige Longsleeve" onload="this.closest('.product-list__product-block').classList.add('loaded')">
+      
+        <img class="product-card__image" src="./images/24a5ebc85ac04628b1733814e2196d9c.png" alt="Vestige Longsleeve">
+      
+        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767886255.png" alt="Vestige Longsleeve">
+      
+        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767871557.png" alt="Vestige Longsleeve">
+      
+    </a>
+
+    
+      <button class="product-card-arrow product-card-arrow--prev" type="button" aria-label="Previous image" data-bound="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64932 -3.78074e-07L9.9 1.26483L2.46489 9.01181L3.25767 9.83808L3.25371 9.83354L9.86001 16.7161L8.62735 18C6.80144 16.0978 1.70389 10.7869 3.93919e-07 9.01181C1.2655 7.6925 0.0313758 8.97821 8.64932 -3.78074e-07Z" fill="#000000" />
+        </svg>
+      </button>
+      <button class="product-card-arrow product-card-arrow--next" type="button" aria-label="Next image" data-bound="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25058 -3.78074e-07L-0.000101383 1.26483L7.43501 9.01181L6.64223 9.83808L6.64619 9.83354L0.0398882 16.7161L1.27255 18C3.09846 16.0978 8.19601 10.7869 9.8999 9.01181C8.6344 7.6925 9.86853 8.97821 1.25058 -3.78074e-07Z" fill="#000000" />
+        </svg>
+      </button>
+    
+  </div>
+
+  <a class="product-list__product-name" href="./pages/vestige-longsleeve.html">Vestige Longsleeve</a>
+
+  
+    
+    
+      
+        
+    
+      <p class="product-list__product-price">$36.99 USD</p>
     
   
 </div>
@@ -3861,154 +4305,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
     
       <p class="product-list__product-price">$34.99 USD</p>
-    
-  
-</div>
-
-
-    
-      <style>
-.product-card-track {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  transform: translateX(0);
-}
-.product-list__img-link{
-  position: relative;
-}
-
-.product-card-track{
-  position: absolute;
-  inset: 0;
-  height: 100%;
-}
-
-
-.product-image-container {
-  overflow: hidden;
-  position: relative;
-  touch-action: pan-y;
-}
-
-.product-card__image {
-  flex: 0 0 100%;
-  width: 100%;
-}
-
-
-  .product-image-container{
-  position: relative;
-  overflow: hidden;
-}
-
-.product-list__img-link{
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.product-list__img-link::before{
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-  width: 100%;
-}
-
-.product-card__image{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity .2s ease;
-}
-
-.product-card__image.is-active{
-  opacity: 1;
-  visibility: visible;
-}
-
-/* стрелки */
-.product-card-arrow{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  padding: 14px; /* размер клика */
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .15s ease;
-}
-
-.product-card-arrow--prev{ left: 0; }
-.product-card-arrow--next{ right: 0; }
-
-.product-image-container:hover .product-card-arrow{
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* на мобилке стрелки не нужны */
-@media (max-width: 748px){
-  .product-image-container:hover .product-card-arrow{
-    opacity: 0;
-    pointer-events: none;
-  }
-  .product-card-arrow{ display:none; }
-}
-
-</style>
-
-<div class="product-list__product-block fade-in loaded" data-product-card="" data-product-card-bound="true" data-product-card-resize-bound="true">
-  <div class="loader"></div>
-
-  <div class="product-image-container" data-hover-bound="true">
-    <a class="product-list__img-link" href="./pages/vestige-longsleeve.html">
-      
-      
-        <img class="product-card__image is-active" src="./images/cc315b38c5134e1ba545c78c7140819d.png" alt="Vestige Longsleeve" onload="this.closest('.product-list__product-block').classList.add('loaded')">
-      
-        <img class="product-card__image" src="./images/24a5ebc85ac04628b1733814e2196d9c.png" alt="Vestige Longsleeve">
-      
-        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767886255.png" alt="Vestige Longsleeve">
-      
-        <img class="product-card__image" src="./images/freepik_a-highly-realistic-fashio_2767871557.png" alt="Vestige Longsleeve">
-      
-    </a>
-
-    
-      <button class="product-card-arrow product-card-arrow--prev" type="button" aria-label="Previous image" data-bound="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64932 -3.78074e-07L9.9 1.26483L2.46489 9.01181L3.25767 9.83808L3.25371 9.83354L9.86001 16.7161L8.62735 18C6.80144 16.0978 1.70389 10.7869 3.93919e-07 9.01181C1.2655 7.6925 0.0313758 8.97821 8.64932 -3.78074e-07Z" fill="#000000" />
-        </svg>
-      </button>
-      <button class="product-card-arrow product-card-arrow--next" type="button" aria-label="Next image" data-bound="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25058 -3.78074e-07L-0.000101383 1.26483L7.43501 9.01181L6.64223 9.83808L6.64619 9.83354L0.0398882 16.7161L1.27255 18C3.09846 16.0978 8.19601 10.7869 9.8999 9.01181C8.6344 7.6925 9.86853 8.97821 1.25058 -3.78074e-07Z" fill="#000000" />
-        </svg>
-      </button>
-    
-  </div>
-
-  <a class="product-list__product-name" href="./pages/vestige-longsleeve.html">Vestige Longsleeve</a>
-
-  
-    
-    
-      
-        
-    
-      <p class="product-list__product-price">$36.99 USD</p>
     
   
 </div>
@@ -4634,7 +4930,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="center-align">
-    <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/perceptvemeans/embed/?cr=1&v=14&wp=540&rd=https%3A%2F%2Fperceptve.com&rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A2165.800000000745%2C%22ls%22%3A596.8000000007451%2C%22le%22%3A1445.800000000745%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="0" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+    <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/perceptvemeans/embed/?cr=1&v=14&wp=540&rd=https%3A%2F%2Fperceptve.com&rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A1276.5%2C%22ls%22%3A351.30000000074506%2C%22le%22%3A860.6000000014901%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="581" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
 </div>
 
 <script async src="./scripts/embed.js"></script>
@@ -4642,7 +4938,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@perceptvemeans" data-unique-id="perceptvemeans" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" id="v52459022136994960">  <iframe name="__tt_embed__v52459022136994960" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin" src="https://www.tiktok.com/embed/@perceptvemeans?lang=en-US&referrer=https%3A%2F%2Fperceptve.com%2F" style="width: 100%; height: 479px; display: block; visibility: unset; max-height: 479px;"></iframe></blockquote> <script async src="./scripts/embed.js"></script>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@perceptvemeans" data-unique-id="perceptvemeans" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" id="v80308605720616740">  <iframe name="__tt_embed__v80308605720616740" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin" src="https://www.tiktok.com/embed/@perceptvemeans?lang=en-US&referrer=https%3A%2F%2Fperceptve.com%2F" style="width: 100%; height: 479px; display: block; visibility: unset; max-height: 479px;"></iframe></blockquote> <script async src="./scripts/embed.js"></script>
   </div>
 </div>
 </div><div id="shopify-section-template--25826209857831__custom_liquid_nWybYH" class="shopify-section"><style>
@@ -4865,49 +5161,8 @@ a.link.list-social__link {
   </div>
   <div id="CartDrawerContent" class="cart-drawer__content">
     
-      <div id="CartDrawerItems">
-        
-          <div class="cart-drawer-item">
-            <div class="cart-drawer-item__img-cont">
-              <img class="cart-drawer-item__img" src="./images/204ebeb0e0ac464f880af211e9fe18e4.png" alt="Mirror Zip-Up - X-Large">
-            </div>
-            <div class="cart-drawer-item__details">
-              <h4 class="cart-drawer-item__title">Mirror Zip-Up - X-Large</h4>
-              <div class="cart-drawer-item__price">
-                
-
-                
-                  <span class="cart-drawer-item__final-price">
-                    $48.95 USD
-                  </span>
-                
-              </div>
-              <div class="cart-drawer-item__quantity">
-                <!-- <span>Quantity:</span> -->
-                <div class="quantity-wrapper-drawer" data-key="51274178920743:035e80da4916a98158d9ed8a38d0fec0" data-quantity="1" data-inventory="99" data-track-quantity="true" data-allow-oversell="deny" data-cart-qty-bound="true">
-                  <button class="cart-drawer__quantity-btn cart-drawer__quantity-btn-minus disabled" type="button" disabled>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12Z" fill="#000000" />
-                    </svg>
-                  </button>
-                  <span id="cart-drawer-quantity-51274178920743:035e80da4916a98158d9ed8a38d0fec0" class="cart-drawer__quantity-value">1</span>
-                  <button class="cart-drawer__quantity-btn cart-drawer__quantity-btn-plus" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                      <path d="M21.4355 12.6982C21.4355 12.8972 21.3565 13.0879 21.2159 13.2286C21.0752 13.3692 20.8845 13.4482 20.6855 13.4482H13.1855V20.9482C13.1855 21.1472 13.1065 21.3379 12.9659 21.4786C12.8252 21.6192 12.6345 21.6982 12.4355 21.6982C12.2366 21.6982 12.0459 21.6192 11.9052 21.4786C11.7646 21.3379 11.6855 21.1472 11.6855 20.9482V13.4482H4.18555C3.98663 13.4482 3.79587 13.3692 3.65522 13.2286C3.51456 13.0879 3.43555 12.8972 3.43555 12.6982C3.43555 12.4993 3.51456 12.3086 3.65522 12.1679C3.79587 12.0273 3.98663 11.9482 4.18555 11.9482H11.6855V4.44824C11.6855 4.24933 11.7646 4.05856 11.9052 3.91791C12.0459 3.77726 12.2366 3.69824 12.4355 3.69824C12.6345 3.69824 12.8252 3.77726 12.9659 3.91791C13.1065 4.05856 13.1855 4.24933 13.1855 4.44824V11.9482H20.6855C20.8845 11.9482 21.0752 12.0273 21.2159 12.1679C21.3565 12.3086 21.4355 12.4993 21.4355 12.6982Z" fill="#000000" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <button class="cart-drawer-item__remove-link" type="button" data-key="51274178920743:035e80da4916a98158d9ed8a38d0fec0" data-cart-remove-bound="true">Remove</button>
-            </div>
-          </div>
-        
-      </div>
-      <div class="cart-drawer-checkout">
-        <p id="CartDrawerTotal" class="cart-drawer__total">Total: $48.95 USD</p>
-        <form method="POST" action="/checkout">
-          <button type="submit" class="cart-drawer__checkout-btn button">Checkout</button>
-        </form>
+      <div id="CartDrawerEmpty" class="cart-drawer-empty">
+        <p>Your cart is empty.</p>
       </div>
     
   </div>
@@ -5124,8 +5379,8 @@ a.link.list-social__link {
 </style>
 <script>
   window.ShopifyCart = {
-    total_price_formatted: "$48.95 USD",
-    total_price: 4895,
+    total_price_formatted: "$0.00 USD",
+    total_price: 0,
     currency: "USD"
   };
 </script>
@@ -5136,4 +5391,4 @@ a.link.list-social__link {
 
 
   
-<shop-cart-sync experiments="{}" data-instance-id="da98bc31-8fa5-41d9-b432-eb5672091fdc"></shop-cart-sync><script type="text/javascript" id="ttEmbedLibScript" src="./scripts/embed_lib_v1.0.13.js"></script><div id="ps__widget_container" style="position: fixed; left: 0px; bottom: 0px; width: 100vw; z-index: 2147483647;"><iframe allow="clipboard-write *" src="https://sdk.postscript.io/desktop.html?shopId=339486&shopShop=7c5b89-2&sessionId=oGe4HV1GuCV4dFku1AAFG&status=_ps_pop_406574%3Ar%3B&splitTests=&flags=action_segment_filters%2Cdynamic_terms%2Clog_headless_shops%2Cpopup_cooldown_suppression%2Credshift_segments%2Csdk_klaviyo_context_checks&disclaimer=%7B%22financial_incentive%22%3Anull%2C%22privacy_policy%22%3A%7B%22text%22%3A%22Privacy+Policy%22%2C%22url%22%3A%22https%3A%2F%2Fterms.pscr.pt%2Flegal%2Fshop%2F7c5b89-2%2Fprivacy_policy%22%7D%2C%22shop_name%22%3A%22Perceptve%22%2C%22terms_of_service%22%3A%7B%22text%22%3A%22Terms+of+Service%22%2C%22url%22%3A%22https%3A%2F%2Fterms.pscr.pt%2Flegal%2Fshop%2F7c5b89-2%2Fterms_of_service%22%7D%2C%22text%22%3A%22*By+providing+your+number+and+clicking+the+button%2C+you+agree+to+receive+recurring+auto-dialed+marketing+SMS+%28including+cart+reminders%3B+AI+content%3B+artificial+or+prerecorded+voices%29+and+our+%7Bterms_of_service%7D+%28including+arbitration%29.+Consent+is+not+required+to+purchase.+Msg+%26+data+rates+may+apply.+Msg+frequency+varies.+Reply+HELP+for+help%3B+STOP+to+opt-out.+View+%7Bprivacy_policy%7D.%22%7D&subscriberId=&uniqueImpressionCookies=&klaviyoExchangeId=&subscriberClassification=unknown&customerData=%7B%22orderCount%22%3Anull%2C%22phone%22%3Anull%2C%22email%22%3Anull%7D&shopNumbers=%7B%22ca_long_code%22%3A%22%2B18883823257%22%2C%22us_long_code%22%3A%22%2B18883823257%22%2C%22us_short_code%22%3A%22%2B18883823257%22%7D&canTrack=true&origin=https%3A%2F%2Fperceptve.com%2F&geo=eyJjb3VudHJ5IjoiVVMiLCJyZWdpb25Db2RlIjoiVkEiLCJjaXR5IjoiQXNoYnVybiJ9" data-testid="ps__widget" title="Marketing Popup" id="ps__widget" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; position: fixed; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background: none transparent; opacity: 0; height: 0px; width: 0px; inset: 0px auto auto 0px; display: none;"></iframe></div><script src="./scripts/ui-addons.js"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+<shop-cart-sync experiments="{}" data-instance-id="e8c50347-6851-48bd-b876-533b9117647b"></shop-cart-sync><script type="text/javascript" id="ttEmbedLibScript" src="./scripts/embed_lib_v1.0.13.js"></script><div id="ps__widget_container" style="position: fixed; left: 0px; bottom: 0px; width: 100vw; z-index: 2147483647;"><iframe allow="clipboard-write *" src="https://sdk.postscript.io/desktop.html?shopId=339486&shopShop=7c5b89-2&sessionId=0C4ZULSKKmAmvzyQU8njc&status=_ps_pop_406574%3Ar%3B&splitTests=&flags=action_segment_filters%2Cdynamic_terms%2Clog_headless_shops%2Cpopup_cooldown_suppression%2Credshift_segments%2Csdk_klaviyo_context_checks&disclaimer=%7B%22financial_incentive%22%3Anull%2C%22privacy_policy%22%3A%7B%22text%22%3A%22Privacy+Policy%22%2C%22url%22%3A%22https%3A%2F%2Fterms.pscr.pt%2Flegal%2Fshop%2F7c5b89-2%2Fprivacy_policy%22%7D%2C%22shop_name%22%3A%22Perceptve%22%2C%22terms_of_service%22%3A%7B%22text%22%3A%22Terms+of+Service%22%2C%22url%22%3A%22https%3A%2F%2Fterms.pscr.pt%2Flegal%2Fshop%2F7c5b89-2%2Fterms_of_service%22%7D%2C%22text%22%3A%22*By+providing+your+number+and+clicking+the+button%2C+you+agree+to+receive+recurring+auto-dialed+marketing+SMS+%28including+cart+reminders%3B+AI+content%3B+artificial+or+prerecorded+voices%29+and+our+%7Bterms_of_service%7D+%28including+arbitration%29.+Consent+is+not+required+to+purchase.+Msg+%26+data+rates+may+apply.+Msg+frequency+varies.+Reply+HELP+for+help%3B+STOP+to+opt-out.+View+%7Bprivacy_policy%7D.%22%7D&subscriberId=&uniqueImpressionCookies=&klaviyoExchangeId=&subscriberClassification=unknown&customerData=%7B%22orderCount%22%3Anull%2C%22phone%22%3Anull%2C%22email%22%3Anull%7D&shopNumbers=%7B%22ca_long_code%22%3A%22%2B18883823257%22%2C%22us_long_code%22%3A%22%2B18883823257%22%2C%22us_short_code%22%3A%22%2B18883823257%22%7D&canTrack=true&origin=https%3A%2F%2Fperceptve.com%2F&geo=eyJjb3VudHJ5IjoiVVMiLCJyZWdpb25Db2RlIjoiVkEiLCJjaXR5IjoiQXNoYnVybiJ9" data-testid="ps__widget" title="Marketing Popup" id="ps__widget" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; position: fixed; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background: none transparent; opacity: 1; height: 75.5px; width: 160.5px; inset: auto auto 10px 10px; display: block; rotate: 0deg;"></iframe></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
